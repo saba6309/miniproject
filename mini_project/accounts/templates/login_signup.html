@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Sign Up</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+
+      .page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        transition: transform 0.8s ease, opacity 0.8s ease;
+      }
+
+      .form-container {
+        width: 400px;
+        height: 720px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.8s ease, opacity 0.8s ease;
+      }
+
+      .form-container h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-field {
+        margin-bottom: 15px;
+      }
+
+      .form-field input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 80px;
+      }
+
+      .form-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .form-footer a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #333;
+      }
+
+      .form-footer a:hover {
+        text-decoration: underline;
+      }
+
+      .go-back-btn {
+        position: absolute;
+        top: 40px;
+        left: 330px;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .go-back-btn svg {
+        width: 24px;
+        height: 24px;
+        fill: black;
+      }
+
+      .toggle-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .toggle-buttons button {
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .toggle-buttons button:hover {
+        background-color: #0056b3;
+      }
+
+      .toggle-buttons button.active {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page" id="login_signup_page">
+      <button class="go-back-btn" onclick="goBackToGetStarted()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M19 12H5m7 7l-7-7 7-7"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <div class="form-container">
+        <div class="toggle-buttons">
+          <button id="login_toggle" class="active" onclick="showLoginForm()">
+            Login
+          </button>
+          <button id="signup_toggle" onclick="showSignupForm()">Sign Up</button>
+        </div>
+        <!-- Login Form -->
+        <form
+          id="login_form"
+          method="post"
+          action="{% url 'login_signup' %}"
+          style="display: block"
+        >
+          {% csrf_token %}
+          <h1>Login</h1>
+          <div class="form-field">
+            <input
+              type="text"
+              placeholder="E-mail / phone number"
+              name="username"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <div class="form-footer">
+            <a href="{% url 'Otp' %}">Forgot Password?</a>
+            <button type="submit" name="login">Log In</button>
+          </div>
+        </form>
+        <!-- Signup Form -->
+        <form
+          id="signup_form"
+          method="post"
+          action="{% url 'login_signup' %}"
+          style="display: none"
+        >
+          {% csrf_token %}
+          <h1>Create an Account</h1>
+          <div class="form-field">
+            <input
+              type="text"
+              placeholder="User Name"
+              name="username"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <input
+              type="email"
+              placeholder="E-mail / phone number"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password1"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="password2"
+              autocomplete="new-password"
+              required
+            />
+          </div>
+          <div class="form-footer">
+            <a href="#" onclick="showLoginForm()">Log in</a>
+            <button type="submit" name="signup">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function goBackToGetStarted() {
+        window.location.href = "{% url 'Get_Started' %}";
+      }
+
+      function showLoginForm() {
+        document.getElementById("login_form").style.display = "block";
+        document.getElementById("signup_form").style.display = "none";
+        document.getElementById("login_toggle").classList.add("active");
+        document.getElementById("signup_toggle").classList.remove("active");
+      }
+
+      function showSignupForm() {
+        document.getElementById("signup_form").style.display = "block";
+        document.getElementById("login_form").style.display = "none";
+        document.getElementById("signup_toggle").classList.add("active");
+        document.getElementById("login_toggle").classList.remove("active");
+      }
+
+      // Ensure the initial form state is correct
+      window.onload = function () {
+        document.getElementById("login_form").style.display = "block";
+        document.getElementById("signup_form").style.display = "none";
+      };
+    </script>
+  </body>
+</html>

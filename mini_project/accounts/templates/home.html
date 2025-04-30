@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Page</title>
+  <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      height: 100vh;
+    }
+
+    .container {
+      width: 360px;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    .header .icon {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+
+    .header .bell {
+      width: 32px;
+      height: 32px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      flex: 1;
+      padding: 10px 20px;
+      text-align: relative;
+      overflow-y: auto;
+    }
+
+    .content .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .content .subtitle {
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .story-grid {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .story-card {
+      background-color: #e6e6e6;
+      padding: 20px;
+      flex: 1;
+      max-width: 100px;
+      text-align: center;
+      border-radius: 8px;
+      height: 150px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+    }
+
+    .navbar .nav-item {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .navbar .nav-item svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: 0 auto 5px;
+    }
+
+    /* Chatbot Button */
+    .chatbot-btn {
+      position: absolute;
+      bottom: 70px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .chatbot-btn:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Chatbot Window */
+    .chatbot-window {
+      position: absolute;
+      bottom: 90px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background-color: #222; /* Dark chat window background */
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chatbot-header {
+      background-color: #fff; /* White header */
+      color: #000;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .chatbot-body {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      color: #fff;
+    }
+
+    .chatbot-footer {
+      display: flex;
+      padding: 10px;
+      background-color: #333;
+    }
+    .chatbot-footer input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .chatbot-footer button {
+      padding: 10px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .chatbot-footer button:hover {
+      background-color: #f1f1f1;
+    }
+
+    .message {
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      max-width: 80%;
+    }
+
+    .message.user {
+      background-color: #007bff;
+      color: #fff;
+      align-self: flex-end;
+    }
+
+    .message.bot {
+      background-color: #555;
+      color: #fff;
+      align-self: flex-start;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon"></div>
+      <div class="bell">🔔</div>
+    </div>
+
+    <div class="content">
+      <h1 class="title">Education</h1>
+      <p class="subtitle">"Explore the wisdom of real-life experiences --- start now!"</p>
+      <div class="story-grid">
+        <div class="story-card">Story 1</div>
+        <div class="story-card">Story 2</div>
+        <div class="story-card">Story 3</div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="nav-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M3 9l9-6 9 6v9a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        Home
+      </div>
+      <div class="nav-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M10 2a8 8 0 0 1 6.32 12.906l5.387 5.387a1 1 0 0 1-1.414 1.414l-5.387-5.387A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 6 6 6 6 0 0 0-6-6z"/>
+        </svg>
+        Search
+      </div>
+      <div class="nav-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M3 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4zm2 0v16h6V4H5zm8-2h6a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h6V4h-6z"/>
+        </svg>
+        Library
+      </div>
+      <div class="nav-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M2 21.5a1 1 0 0 0 1.27.96l6.09-1.69a1 1 0 0 0 .38-.23l11-11a3.5 3.5 0 0 0-4.95-4.95l-11 11a1 1 0 0 0-.23.38L2 20.5zm3.91-2.14L4.5 19.5l.86-2.42 8.74-8.74 1.56 1.56-8.74 8.74zm10.51-10.51-1.56-1.56 1.34-1.34a1.5 1.5 0 0 1 2.12 2.12l-1.34 1.34z"/>
+        </svg>
+        Write
+      </div>
+      <div class="nav-item">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-5.33 0-8 2.67-8 5v1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1c0-2.33-2.67-5-8-5z"/>
+        </svg>
+        Profile
+      </div>
+    </div>
+
+    <!-- Chatbot Button -->
+    <a href="{% url 'list_messages' %}"><button class="chatbot-btn" onclick="toggleChatbot()">🤖</button></a>
+
+  <!-- Chatbot Window -->
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">Chatbot</div>
+    <div class="chatbot-body" id="chatbotBody">
+      <!-- Chatbot Messages Appear Here -->
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="userInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script>
+    // Function to toggle chatbot visibility
+    function toggleChatbot() {
+      const chatbotWindow = document.getElementById('chatbotWindow');
+      chatbotWindow.style.display = chatbotWindow.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Function to send and display messages
+    function sendMessage() {
+      const userInput = document.getElementById('userInput');
+      const chatbotBody = document.getElementById('chatbotBody');
+
+      if (userInput.value.trim() !== '') {
+        // User message
+        const userMessage = document.createElement('div');
+        userMessage.classList.add('message', 'user');
+        userMessage.textContent = userInput.value;
+        chatbotBody.appendChild(userMessage);
+
+        // Clear input field
+        userInput.value = '';
+
+        // Simulate chatbot response
+        setTimeout(() => {
+          const botMessage = document.createElement('div');
+          botMessage.classList.add('message', 'bot');
+          botMessage.textContent = 'This is a bot response!';
+          chatbotBody.appendChild(botMessage);
+
+          // Scroll to the bottom
+          chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=320, height=720, initial-scale=1.0" />
+    <title>Forget Password</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+    <style>
+      /* Reset styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body styling */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 720px;
+        margin: 0 auto;
+        background-color: #333;
+        font-family: Arial, sans-serif;
+      }
+
+      /* OTP Container */
+      .otp-container {
+        text-align: center;
+        position: relative;
+        background-color: #f9f9f9;
+        height: 720px;
+        width: 360px;
+      }
+
+      /* Back Button */
+      .go-back-btn {
+        position: absolute;
+        top: 5px;
+        right: 250px;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .go-back-btn svg {
+        width: 24px;
+        height: 24px;
+        fill: black;
+      }
+
+      /* Heading */
+      h1 {
+        font-size: 28px;
+        letter-spacing: 8px;
+        margin-bottom: 60px;
+        height: 100px;
+        padding-top: 160px;
+        text-align: center;
+        width: 100%;
+      }
+
+      /* OTP Inputs */
+      .otp-inputs {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+
+      .otp-inputs input {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .otp-inputs input:focus {
+        border-color: #007bff;
+      }
+
+      /* Resend link */
+      .resend {
+        margin-bottom: 20px;
+      }
+
+      .resend a {
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .resend a:hover {
+        text-decoration: underline;
+      }
+
+      /* Buttons */
+      .buttons {
+        display: flex;
+        justify-content: center;
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #confirm-btn {
+        background-color: #007bff;
+        color: #fff;
+        width: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="otp-container">
+      <!-- Back Button -->
+      <button class="go-back-btn" onclick="goBackToPage2()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d=""
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <h1>O T P</h1>
+
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="email" value="{{ email }}" />
+        <div class="otp-inputs">
+          <input type="text" name="otp1" maxlength="1" required />
+          <input type="text" name="otp2" maxlength="1" required />
+          <input type="text" name="otp3" maxlength="1" required />
+          <input type="text" name="otp4" maxlength="1" required /><br />
+          {% if error %}
+          <p style="color: red">{{ error }}</p>
+          {% endif %}
+        </div>
+        <div class="resend">
+          <a href="#">Resend OTP?</a>
+        </div>
+        <div class="buttons">
+          <button type="submit" id="confirm-btn">Confirm OTP</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      // Automatically focus on the next input after typing a digit
+      document
+        .querySelectorAll(".otp-inputs input")
+        .forEach((input, index, inputs) => {
+          input.addEventListener("input", () => {
+            if (input.value.length === 1 && index < inputs.length - 1) {
+              inputs[index + 1].focus();
+            }
+          });
+
+          input.addEventListener("keydown", (e) => {
+            if (e.key === "Backspace" && index > 0 && input.value === "") {
+              inputs[index - 1].focus();
+            }
+          });
+        });
+      function goTohome() {
+        window.location.href = "{% url 'home' %}";
+      }
+    </script>
+  </body>
+</html>

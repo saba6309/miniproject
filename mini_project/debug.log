@@ -1,0 +1,904 @@
+2024-12-29 15:26:35,358 INFO Watching for file changes with StatReloader
+2024-12-29 15:27:20,441 ERROR Internal Server Error: /Otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 17, in Otp
+    send_mail('Your OTP Code', f'Your OTP code is {otp}', 'your_email@example.com', [email])
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-842aba72f71sm15945960a12.9 - gsmtp')
+2024-12-29 15:29:13,120 ERROR Internal Server Error: /Otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 17, in Otp
+    send_mail('Your OTP Code', f'Your OTP code is {otp}', 'your_email@example.com', [email])
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-219dc9f692fsm160831335ad.216 - gsmtp')
+2024-12-29 16:22:44,379 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\mini_project\settings.py changed, reloading.
+2024-12-29 16:22:45,039 INFO Watching for file changes with StatReloader
+2024-12-29 16:34:55,031 INFO Watching for file changes with StatReloader
+2024-12-29 16:35:00,349 WARNING Not Found: /favicon.ico
+2024-12-29 17:23:00,455 INFO Watching for file changes with StatReloader
+2024-12-29 17:23:07,483 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 8, in Get_Started
+    return render(request, 'Get_Started.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 573, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+2024-12-29 17:23:08,435 WARNING Not Found: /favicon.ico
+2024-12-29 18:23:19,189 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-29 18:23:20,000 INFO Watching for file changes with StatReloader
+2024-12-29 18:30:49,658 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-29 18:30:50,276 INFO Watching for file changes with StatReloader
+2024-12-29 18:31:27,951 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-29 18:31:28,604 INFO Watching for file changes with StatReloader
+2024-12-29 18:35:01,632 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-29 18:35:02,365 INFO Watching for file changes with StatReloader
+2024-12-29 18:40:05,396 ERROR Internal Server Error: /verify_otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view accounts.views.verify_otp didn't return an HttpResponse object. It returned None instead.
+2024-12-30 17:30:07,028 INFO Watching for file changes with StatReloader
+2024-12-30 18:14:52,818 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 18:14:53,282 INFO Watching for file changes with StatReloader
+2024-12-30 18:16:45,200 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 18:16:45,664 INFO Watching for file changes with StatReloader
+2024-12-30 18:20:14,664 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 18:20:15,047 INFO Watching for file changes with StatReloader
+2024-12-30 18:27:01,112 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 18:27:01,501 INFO Watching for file changes with StatReloader
+2024-12-30 18:28:56,024 WARNING Not Found: /favicon.ico
+2024-12-30 18:42:05,579 INFO Watching for file changes with StatReloader
+2024-12-30 18:48:36,962 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 18:48:37,392 INFO Watching for file changes with StatReloader
+2024-12-30 19:48:12,600 INFO Watching for file changes with StatReloader
+2024-12-30 19:53:43,910 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 19:53:45,218 INFO Watching for file changes with StatReloader
+2024-12-30 19:54:00,158 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 19:54:01,248 INFO Watching for file changes with StatReloader
+2024-12-30 19:55:05,757 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 19:55:06,916 INFO Watching for file changes with StatReloader
+2024-12-30 19:55:32,329 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 19:55:33,385 INFO Watching for file changes with StatReloader
+2024-12-30 20:06:08,596 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:06:09,324 INFO Watching for file changes with StatReloader
+2024-12-30 20:09:32,450 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:09:33,459 INFO Watching for file changes with StatReloader
+2024-12-30 20:10:26,373 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:10:27,086 INFO Watching for file changes with StatReloader
+2024-12-30 20:10:46,118 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:10:46,749 INFO Watching for file changes with StatReloader
+2024-12-30 20:12:44,907 DEBUG Verify OTP - Email: None, Entered OTP: 2916, Stored OTP: None
+2024-12-30 20:12:44,908 DEBUG Invalid OTP
+2024-12-30 20:13:01,248 DEBUG Verify OTP - Email: None, Entered OTP: 2916, Stored OTP: None
+2024-12-30 20:13:01,248 DEBUG Invalid OTP
+2024-12-30 20:17:37,780 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:17:38,866 INFO Watching for file changes with StatReloader
+2024-12-30 20:19:15,764 INFO Watching for file changes with StatReloader
+2024-12-30 20:19:58,693 DEBUG Generated OTP - Email: shafiasaba2004@gmail.com, OTP: 4950
+2024-12-30 20:20:20,529 DEBUG Verify OTP - Email: None, Entered OTP: 4950, Stored OTP: None
+2024-12-30 20:20:20,529 DEBUG Invalid OTP
+2024-12-30 20:22:31,126 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\models.py changed, reloading.
+2024-12-30 20:22:31,961 INFO Watching for file changes with StatReloader
+2024-12-30 20:23:00,083 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:23:01,296 INFO Watching for file changes with StatReloader
+2024-12-30 20:23:19,221 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:23:20,218 INFO Watching for file changes with StatReloader
+2024-12-30 20:25:31,845 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:25:32,889 INFO Watching for file changes with StatReloader
+2024-12-30 20:25:40,815 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:25:41,753 INFO Watching for file changes with StatReloader
+2024-12-30 20:26:18,642 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:26:19,653 INFO Watching for file changes with StatReloader
+2024-12-30 20:26:58,219 INFO Watching for file changes with StatReloader
+2024-12-30 20:27:58,199 WARNING Not Found: /favicon.ico
+2024-12-30 20:28:03,432 ERROR Internal Server Error: /Otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 42, in Otp
+    user = User.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+2024-12-30 20:30:42,880 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:30:43,432 INFO Watching for file changes with StatReloader
+2024-12-30 20:31:26,329 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2024-12-30 20:31:26,855 INFO Watching for file changes with StatReloader
+2024-12-30 20:32:39,008 ERROR Internal Server Error: /Otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 43, in Otp
+    user = User.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+2025-01-01 12:18:55,075 INFO Watching for file changes with StatReloader
+2025-01-01 12:24:36,103 INFO Watching for file changes with StatReloader
+2025-01-01 12:24:43,340 WARNING Not Found: /favicon.ico
+2025-01-01 12:25:48,013 ERROR Internal Server Error: /login_signup/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 39, in login_signup
+    return render(request, 'login_signup.html', {'login_form': login_form, 'registration_form': registration_form})
+                                                                                                ^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'registration_form' where it is not associated with a value
+2025-01-01 12:28:50,722 ERROR Internal Server Error: /login_signup/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 39, in login_signup
+    return render(request, 'login_signup.html', {'login_form': login_form, 'registration_form': registration_form})
+                                                                                                ^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'registration_form' where it is not associated with a value
+2025-01-01 12:56:06,772 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2025-01-01 12:56:07,535 INFO Watching for file changes with StatReloader
+2025-01-01 13:04:03,559 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2025-01-01 13:04:04,327 INFO Watching for file changes with StatReloader
+2025-01-01 13:22:43,274 INFO Watching for file changes with StatReloader
+2025-01-01 13:27:43,655 INFO Watching for file changes with StatReloader
+2025-01-01 14:18:40,899 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2025-01-01 14:18:41,648 INFO Watching for file changes with StatReloader
+2025-01-01 14:18:53,196 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py changed, reloading.
+2025-01-01 14:18:53,850 INFO Watching for file changes with StatReloader
+2025-01-02 19:56:31,090 INFO Watching for file changes with StatReloader
+2025-01-02 19:57:17,184 ERROR Internal Server Error: /chatbot/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 5, in chatbot_home
+    return render(request, 'chatbot/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: chatbot/home.html
+2025-01-02 19:57:17,333 WARNING Not Found: /favicon.ico
+2025-01-02 19:57:49,390 ERROR Internal Server Error: /chatbot/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 5, in chatbot_home
+    return render(request, 'chatbot/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: chatbot/home.html
+2025-01-02 19:57:50,626 ERROR Internal Server Error: /chatbot/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 5, in chatbot_home
+    return render(request, 'chatbot/home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: chatbot/home.html
+2025-01-02 19:59:52,602 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\mini_project\settings.py changed, reloading.
+2025-01-02 19:59:53,046 INFO Watching for file changes with StatReloader
+2025-01-05 13:10:32,678 INFO Watching for file changes with StatReloader
+2025-01-05 13:11:09,120 WARNING Not Found: /favicon.ico
+2025-01-05 13:12:57,351 ERROR Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 15, in home
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chatbot_home' not found. 'chatbot_home' is not a valid view function or pattern name.
+2025-01-05 13:14:38,670 ERROR Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 15, in home
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chatbot_home' not found. 'chatbot_home' is not a valid view function or pattern name.
+2025-01-05 13:14:42,772 ERROR Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 15, in home
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chatbot/home' not found. 'chatbot/home' is not a valid view function or pattern name.
+2025-01-05 13:19:50,991 ERROR Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 15, in home
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chatbot/home' not found. 'chatbot/home' is not a valid view function or pattern name.
+2025-01-18 15:13:31,332 INFO Watching for file changes with StatReloader
+2025-01-18 15:13:47,098 WARNING Not Found: /favicon.ico
+2025-01-18 15:17:45,294 ERROR Internal Server Error: /chatbot/send
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 12, in send_message
+    bot_response = model.generate_content(user_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 830, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-01-18 15:19:15,294 ERROR Internal Server Error: /chatbot/send
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 12, in send_message
+    bot_response = model.generate_content(user_message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 830, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\timeout.py", line 120, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-01-31 18:06:19,165 INFO Watching for file changes with StatReloader
+2025-01-31 18:10:35,921 INFO Watching for file changes with StatReloader
+2025-01-31 18:24:41,158 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\train_chatbot.py changed, reloading.
+2025-01-31 18:24:41,934 INFO Watching for file changes with StatReloader
+2025-01-31 18:25:42,964 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\train_chatbot.py changed, reloading.
+2025-01-31 18:25:43,548 INFO Watching for file changes with StatReloader
+2025-01-31 18:26:19,581 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 18:26:21,726 INFO Watching for file changes with StatReloader
+2025-01-31 18:27:43,542 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 18:27:44,356 INFO Watching for file changes with StatReloader
+2025-01-31 18:29:30,120 WARNING Not Found: /favicon.ico
+2025-01-31 18:41:08,843 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 18:41:10,424 INFO Watching for file changes with StatReloader
+2025-01-31 18:41:32,464 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 18:41:34,034 INFO Watching for file changes with StatReloader
+2025-01-31 19:00:18,051 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 19:00:21,000 INFO Watching for file changes with StatReloader
+2025-01-31 19:40:52,977 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 19:40:55,918 INFO Watching for file changes with StatReloader
+2025-01-31 20:05:29,216 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 20:05:32,478 INFO Watching for file changes with StatReloader
+2025-01-31 20:13:29,648 ERROR Internal Server Error: /Otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 53, in Otp
+    send_mail('Your OTP Code', f'Your OTP is {otp}', 'from@example.com', [email])
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 714, in login
+    self.ehlo_or_helo_if_needed()
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 611, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+                   ^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 452, in ehlo
+    (code, msg) = self.getreply()
+                  ^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 405, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
+2025-01-31 20:24:39,384 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-01-31 20:24:42,674 INFO Watching for file changes with StatReloader
+2025-02-01 09:54:40,652 ERROR Internal Server Error: /Otp/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 53, in Otp
+    send_mail('Your OTP Code', f'Your OTP is {otp}', 'from@example.com', [email])
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\socket.py", line 828, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\socket.py", line 963, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+2025-02-13 11:28:14,088 INFO Watching for file changes with StatReloader
+2025-02-13 11:33:32,260 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\urls.py changed, reloading.
+2025-02-13 11:33:34,225 INFO Watching for file changes with StatReloader
+2025-02-13 11:34:03,507 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\urls.py changed, reloading.
+2025-02-13 11:34:04,751 INFO Watching for file changes with StatReloader
+2025-02-13 11:34:40,690 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\mini_project\settings.py changed, reloading.
+2025-02-13 11:34:42,284 INFO Watching for file changes with StatReloader
+2025-02-13 11:35:36,178 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\mini_project\settings.py changed, reloading.
+2025-02-13 11:35:37,740 INFO Watching for file changes with StatReloader
+2025-02-13 11:45:26,327 WARNING Not Found: /favicon.ico
+2025-02-13 16:04:19,023 WARNING Not Found: /favicon.ico
+2025-02-13 19:01:16,411 WARNING Not Found: /chatbot/image.png
+2025-02-13 19:02:58,924 WARNING Not Found: /chatbot/style.css
+2025-02-13 19:28:05,913 WARNING Not Found: /chatbot/styles.css
+2025-02-13 19:48:49,832 WARNING Not Found: /chatbot/styles.css
+2025-02-17 21:34:00,677 INFO Watching for file changes with StatReloader
+2025-02-17 21:34:52,561 WARNING Not Found: /favicon.ico
+2025-02-17 21:40:22,346 WARNING Not Found: /chatbot/css/main.css
+2025-02-18 08:37:06,642 INFO Watching for file changes with StatReloader
+2025-02-18 08:39:13,655 WARNING Not Found: /favicon.ico
+2025-02-18 09:42:45,343 WARNING Not Found: /chatbot/styles.css
+2025-02-18 10:11:32,818 WARNING Not Found: /chatbot/placeholder.jpg
+2025-02-18 10:22:53,179 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 10:22:58,202 INFO Watching for file changes with StatReloader
+2025-02-18 10:24:56,485 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 10:24:58,101 INFO Watching for file changes with StatReloader
+2025-02-18 10:26:42,628 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 10:26:44,732 INFO Watching for file changes with StatReloader
+2025-02-18 10:27:34,477 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 10:27:36,285 INFO Watching for file changes with StatReloader
+2025-02-18 10:27:48,792 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 10:27:50,569 INFO Watching for file changes with StatReloader
+2025-02-18 11:29:51,930 ERROR Internal Server Error: /chatbot/send
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 34, in send_message
+    elif is_programming_query(user_message):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 21, in is_programming_query
+    return any(keyword in message.lower() for keyword in programming_keywords)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 21, in <genexpr>
+    return any(keyword in message.lower() for keyword in programming_keywords)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not ellipsis
+2025-02-18 11:32:58,787 ERROR Internal Server Error: /chatbot/send
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 34, in send_message
+    elif is_programming_query(user_message):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 21, in is_programming_query
+    return any(keyword in message.lower() for keyword in programming_keywords)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 21, in <genexpr>
+    return any(keyword in message.lower() for keyword in programming_keywords)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not ellipsis
+2025-02-18 11:37:58,289 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 11:38:00,028 INFO Watching for file changes with StatReloader
+2025-02-18 11:38:09,287 INFO Received user message: thanks
+2025-02-18 11:38:09,287 INFO General greeting response: Glad to help!
+2025-02-18 11:38:38,313 INFO Received user message: hi
+2025-02-18 11:38:38,313 INFO General greeting response: Hi there! What can I do for you?
+2025-02-18 11:38:49,593 INFO Received user message: how can i get started with building a simple chatbot
+2025-02-18 11:38:49,699 ERROR Internal Server Error: /chatbot/send
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 41, in send_message
+    elif is_programming_query(user_message):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 21, in is_programming_query
+    return any(keyword in message.lower() for keyword in programming_keywords)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py", line 21, in <genexpr>
+    return any(keyword in message.lower() for keyword in programming_keywords)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'in <string>' requires string as left operand, not ellipsis
+2025-02-18 11:49:20,703 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 11:49:22,727 INFO Watching for file changes with StatReloader
+2025-02-18 11:49:55,802 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 11:49:57,218 INFO Watching for file changes with StatReloader
+2025-02-18 11:50:11,531 INFO Received user message: hi
+2025-02-18 11:50:11,531 INFO General greeting response: Good morning! How can I help?
+2025-02-18 11:51:15,397 INFO Received user message: how can i get started with the project on building a simple chatbot
+2025-02-18 11:51:42,372 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Getting Started with a Simple Chatbot Project<br><br>### Prerequisites:<br><br>- Basic understanding of HTML, CSS, and JavaScript<br>- Text editor or IDE like Visual Studio Code<br>- Web server or hosting platform (e.g., localhost, GitHub Pages)<br><br>### Step 1: Create a Basic HTML Structure<br><br>```html<br><!DOCTYPE html><br><html><br><head><br>  <title>Simple Chatbot</title><br>  <link rel="stylesheet" href="style.css"><br>  <script src="script.js"></script><br></head><br><body><br>  <h1>Simple Chatbot</h1><br>  <div id="chat-window"><br>    <!-- Chat messages will go here --><br>  </div><br>  <form id="chat-form"><br>    <input type="text" id="chat-input" placeholder="Type your message here..."><br>    <button type="submit">Send</button><br>  </form><br></body><br></html><br>```<br><br>### Step 2: Add CSS Styling<br><br>Create a `style.css` file and add some basic styling:<br><br>```css<br>body {<br>  font-family: Arial, sans-serif;<br>}<br><br>#chat-window {<br>  width: 300px;<br>  height: 500px;<br>  background-color: #eee;<br>  overflow-y: scroll;<br>}<br><br>#chat-form {<br>  margin-top: 10px;<br>}<br><br>#chat-input {<br>  width: 200px;<br>}<br>```<br><br>### Step 3: Implement JavaScript Logic<br><br>Create a `script.js` file and add the following code:<br><br>```javascript<br>// Get elements<br>const chatWindow = document.getElementById('chat-window');<br>const chatForm = document.getElementById('chat-form');<br>const chatInput = document.getElementById('chat-input');<br><br>// Handle form submission<br>chatForm.addEventListener('submit', (e) => {<br>  e.preventDefault();<br><br>  // Get user input<br>  const message = chatInput.value;<br><br>  // Clear input<br>  chatInput.value = '';<br><br>  // Send message to chat window<br>  appendMessageToChatWindow(message, 'user');<br><br>  // Simulate chatbot response<br>  setTimeout(() => {<br>    const response = generateResponse(message);<br>    appendMessageToChatWindow(response, 'chatbot');<br>  }, 1000);<br>});<br><br>// Function to append message to chat window<br>function appendMessageToChatWindow(message, sender) {<br>  const newMessage = document.createElement('p');<br>  newMessage.classList.add('chat-message', `chat-message--${sender}`);<br>  newMessage.textContent = message;<br>  chatWindow.appendChild(newMessage);<br>  chatWindow.scrollTop = chatWindow.scrollHeight;<br>}<br><br>// Function to generate chatbot response<br>const responses = [<br>  'Hi there!',<br>  'How can I help you?',<br>  'What's your name?',<br>  'What are you interested in?'<br>];<br>function generateResponse(message) {<br>  return responses[Math.floor(Math.random() * responses.length)];<br>}<br>```<br><br>### Step 4: Run the Project<br><br>Save your HTML, CSS, and JavaScript files. To run the project:<br><br>- If using localhost:<br>  - Open a terminal and navigate to the project directory.<br>  - Run `python -m http.server 8000` to start a web server.<br>  - Open `http://localhost:8000` in a web browser.<br>- If using GitHub Pages:<br>  - Create a GitHub repository and push your code to it.<br>  - GitHub will automatically build and publish your project on a subdomain of `github.io`.<br><br>### Enhancements:<br><br>Once you have a working chatbot, you can enhance it by:<br><br>- Adding more responses and conversation flow.<br>- Implementing natural language processing (NLP) for more accurate responses.<br>- Connecting to a back-end API or database for data retrieval.<br>- Creating a more visually engaging user interface.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>**Getting Started with Chatbot Development**<br><br>**1. Choose a Platform:**<br><br>- **Dialogflow:** Popular for natural language processing (NLP).<br>- **IBM Watson Assistant:** Offers multiple pre-built skills and AI capabilities.<br>- **Microsoft LUIS:** Supports intent recognition and entity extraction.<br>- **Amazon Lex:** Focuses on conversational AI for enterprise applications.<br><br>**2. Design the Conversation Flow:**<br><br>- Create a flowchart or diagram to outline the chatbot's responses and user interactions.<br>- Consider using natural language understanding (NLU) techniques to interpret user queries.<br><br>**3. Build the Chatbot:**<br><br>- **HTML and CSS:** Design the chatbot's user interface (UI) and appearance.<br>- **JavaScript:** Implement the chatbot's logic and functionalities.<br>- **NLP APIs:** Integrate with NLP platforms to enhance understanding.<br><br>**Advanced Techniques and Integrations**<br><br>**1. Natural Language Generation (NLG):**<br><br>- Use NLG to generate human-like responses based on the user's input.<br>- Integrate with NLU tools to extract relevant information and create tailored responses.<br><br>**2. Machine Learning (ML):**<br><br>- Employ ML algorithms to train the chatbot and improve its conversational skills over time.<br>- Implement supervised learning or deep learning models to recognize user intents and generate appropriate replies.<br><br>**3. External API Integrations:**<br><br>- Connect the chatbot to external services, such as weather updates, news feeds, or customer support systems.<br>- Enhance the chatbot's capabilities by leveraging APIs for specific domain knowledge.<br><br>**Features**<br><br>**1. Multi-Modal Interactions:**<br><br>- Enable the chatbot to accept not only text-based input but also voice commands or images.<br>- Enhance user experience by providing multiple input channels.<br><br>**2. Personalized Conversations:**<br><br>- Track user information and preferences to tailor the chatbot's responses.<br>- Offer personalized recommendations and provide a more engaging experience.<br><br>**3. Contextual Understanding:**<br><br>- Maintain a conversation history to understand the context of user queries.<br>- Improve the chatbot's ability to comprehend user intents and provide relevant replies.<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>## Getting Started with a Simple Chatbot Project<br><br>**Step 1: Choose a Development Platform**<br><br>* **Python:** Use frameworks like Rasa or Botsify<br>* **JavaScript:** Consider libraries like Dialogflow or Botkit<br>* **Node.js:** Explore platforms like IBM Watson Assistant or Microsoft Bot Framework<br><br>**Step 2: Design the Chatbot's Flow**<br><br>* Define your chatbot's purpose and target audience<br>* Create a dialog tree or flowchart to map out its conversations<br>* Include both user inputs and chatbot responses<br><br>**Step 3: Train the Chatbot**<br><br>* Gather training data by collecting user queries and responses<br>* Use machine learning algorithms to train the chatbot on this data<br>* Iterate on the training process to improve accuracy and reduce bias<br><br>**Step 4: Deploy the Chatbot**<br><br>* Choose a platform to deploy your chatbot on (e.g., website, messaging app)<br>* Configure the chatbot's integration and set up automated responses<br>* Monitor the chatbot's performance and make adjustments as needed<br><br>## Alternative Project Ideas<br><br>**1. Smart Assistant for Home Automation**<br><br>* **Benefits:**<br>    * Automates home tasks like controlling lights, appliances, and temperature<br>    * Provides voice-activated commands for convenience<br>    * Enhances home security and convenience<br><br>**2. Conversational Shopping Assistant**<br><br>* **Benefits:**<br>    * Provides personalized shopping recommendations based on user preferences<br>    * Simplifies the online shopping process<br>    * Reduces the need for in-store visits<br><br>**3. Chat-Based Support Tool**<br><br>* **Benefits:**<br>    * Offers instant and convenient customer support<br>    * Automates common queries to reduce response time<br>    * Improves customer satisfaction and loyalty<br><br>**4. Language Translation Chatbot**<br><br>* **Benefits:**<br>    * Facilitates communication between people speaking different languages<br>    * Enables real-time translation in chat and messaging apps<br>    * Promotes global connectivity and understanding<br><br>**5. Health and Wellness Chatbot**<br><br>* **Benefits:**<br>    * Provides personalized health information and guidance<br>    * Monitors symptoms and tracks health progress<br>    * Empowers users to take control of their health
+2025-02-18 11:51:42,420 WARNING Not Found: /chatbot/style.css
+2025-02-18 11:59:09,525 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 11:59:13,291 INFO Watching for file changes with StatReloader
+2025-02-18 12:02:24,065 INFO Received user message: hi
+2025-02-18 12:02:24,065 INFO General greeting response: Hi there! What can I do for you?
+2025-02-18 12:02:28,796 INFO Received user message: how can i get started with the project on building a simple chatbot
+2025-02-18 12:02:54,480 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Getting Started with Building a Simple Chatbot<br><br>### Step 1: Choose a Platform<br><br>There are several platforms available for building chatbots. Here are a few popular options:<br><br>* **Dialogflow:** A comprehensive platform that offers natural language processing (NLP) and machine learning capabilities.<br>* **Botsify:** A user-friendly platform suitable for beginners, offers drag-and-drop functionality.<br>* **ManyChat:** A platform designed specifically for Facebook Messenger chatbots.<br>* **Chatfuel:** Another popular option for building chatbots on Facebook Messenger.<br><br>### Step 2: Design Your Chatbot<br><br>Before you start coding, it's important to design your chatbot. Consider the following:<br><br>* **Purpose:** What is the main objective of your chatbot? Is it to provide customer support, answer questions, or engage in social conversations?<br>* **Target Audience:** Who will be using your chatbot? Their interests, behavior, and preferred communication style should influence your design.<br>* **Chatbot's Personality:** Determine the tone and persona of your chatbot. Will it be formal, friendly, or witty?<br><br>### Step 3: Create Intents and Entities (for NLP platforms)<br><br>* **Intents:** Intents define the different actions or intentions that a user might have when interacting with your chatbot.<br>* **Entities:** Entities are specific pieces of information that your chatbot needs to extract from user input.<br><br>### Step 4: Write the Code<br><br>Once you have designed your chatbot, you can start writing the code. Most chatbot platforms offer a code editor or a visual interface to create and manage your chatbot's functionality.<br><br>### Step 5: Test and Deploy<br><br>* **Testing:** Thoroughly test your chatbot to ensure it works as intended. Use different scenarios and user inputs to identify any bugs or glitches.<br>* **Deployment:** Once satisfied with the testing results, deploy your chatbot on the chosen platform. This process may involve connecting your chatbot to a specific messaging service (e.g., Facebook Messenger, Telegram).<br><br>### Additional Tips for Beginners<br><br>* Start with a simple chatbot that focuses on a specific task.<br>* Use a chatbot builder tool to simplify the development process.<br>* Leverage pre-built templates and sample codes provided by platform providers.<br>* Join communities and forums to connect with other chatbot enthusiasts.<br>* Continuously test and improve your chatbot to enhance its performance.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>## Getting Started with Building a Simple Chatbot<br><br>### **1. Choose a Platform**<br><br>- **Dialogflow**: Google's NLP engine; easy to use with pre-built intents and entities.<br>- **Wit.ai**: Facebook's NLP platform; allows customization and advanced features.<br>- **IBM Watson Assistant**: IBM's AI-powered chatbot framework; offers industry-specific solutions.<br><br>### **2. Design the Conversation Flow**<br><br>- **Create user stories**: Define the chatbot's purpose and user interactions.<br>- **Map out conversation paths**: Design a logical flow for conversations, including branching and loops.<br>- **Implement intents and entities**: Use NLP to identify user requests and extract data.<br><br>### **3. Train the Chatbot**<br><br>- **Collect training data**: Gather transcripts of human-to-human conversations relevant to your chatbot's domain.<br>- **Annotate the data**: Label the training data with intents and entities.<br>- **Train the NLP model**: Use a machine learning algorithm to train the chatbot to understand natural language.<br><br>### **4. Deploy and Integrate**<br><br>- **Connect to a messaging platform**: Integrate your chatbot with popular messaging apps like Facebook Messenger or WhatsApp.<br>- **Set deployment settings**: Configure the chatbot's behavior, including welcome messages and error handling.<br>- **Monitor and improve**: Track chatbot performance and make adjustments based on user feedback.<br><br>## Advanced Techniques, Integrations, and Features<br><br>### **Advanced Techniques**<br><br>- **Multi-modal inputs**: Allow users to input text, voice, and images.<br>- **Context awareness**: Maintain conversational history to provide personalized responses.<br>- **Natural Language Generation (NLG)**: Use AI to generate human-like responses.<br><br>### **Integrations**<br><br>- **CRM systems**: Connect to a CRM to access customer information and provide contextual assistance.<br>- **E-commerce platforms**: Integrate with e-commerce sites to provide product recommendations and order updates.<br>- **Help desks**: Use chatbots to handle help desk inquiries and automate support processes.<br><br>### **Features**<br><br>- **Knowledge base integration**: Embed knowledge base articles into the chatbot's responses.<br>- **Sentiment analysis**: Analyze user messages to detect sentiment and adapt responses accordingly.<br>- **Personality customization**: Define distinct personalities for the chatbot, such as helpful, witty, or professional.<br>- **Omnichannel support**: Extend the chatbot's functionality across multiple channels like email, web, and mobile.<br>- **Reporting and analytics**: Track chatbot usage, identify bottlenecks, and optimize performance.<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>## Getting Started with a Simple Chatbot Project<br><br>**Materials:**<br><br>* Code editor (e.g., Visual Studio Code, Atom)<br>* Node.js and npm installed<br>* Text editor<br>* Basic knowledge of JavaScript and HTML<br><br>**Steps:**<br><br>1. **Create a new Node.js project:**<br>    ```<br>    npm init -y<br>    ```<br>2. **Install the Dialogflow SDK:**<br>    ```<br>    npm install --save @google-cloud/dialogflow<br>    ```<br>3. **Create a Dialogflow agent:**<br>    * Visit the Dialogflow website and create a new agent.<br>    * Save the agent ID for later use.<br>4. **Configure your Node.js project:**<br>    * Create a file named `index.js` in your project directory.<br>    * Add the following code, replacing `YOUR_AGENT_ID` with the ID of your Dialogflow agent:<br>    ```javascript<br>    const {SessionsClient} = require('@google-cloud/dialogflow');<br>    const sessionClient = new SessionsClient();<br><br>    async function detectIntent(projectId, sessionId, query, languageCode) {<br>      // Define session path<br>      const sessionPath = sessionClient.projectAgentSessionPath(projectId, sessionId);<br><br>      // Define request object<br>      const request = {<br>        session: sessionPath,<br>        queryInput: {<br>          text: {<br>            text: query,<br>            languageCode: languageCode,<br>          },<br>        },<br>      };<br><br>      // Send request and process response<br>      const responses = await sessionClient.detectIntent(request);<br><br>      const result = responses[0].queryResult;<br>      return {<br>        text: result.fulfillmentText,<br>        intent: result.intent.displayName,<br>      };<br>    }<br>    ```<br>5. **Run the chatbot:**<br>    ```<br>    node index.js<br>    ```<br><br>## Alternative Project Ideas and Benefits<br><br>### Virtual Assistant<br><br>* **Benefits:**<br>    * Automates tasks such as answering questions, setting appointments, or booking flights.<br>    * Provides 24/7 support and personalized insights.<br>    * Enhances user experience and efficiency.<br><br>### Language Translator<br><br>* **Benefits:**<br>    * Breaks down language barriers by translating text and speech in real-time.<br>    * Enables communication between people who speak different languages.<br>    * Facilitates global collaboration and information sharing.<br><br>### Online Tutor<br><br>* **Benefits:**<br>    * Provides personalized learning experiences based on student needs.<br>    * Offers instant feedback and interactive learning sessions.<br>    * Makes education more accessible and convenient.<br><br>### Health and Wellness Chatbot<br><br>* **Benefits:**<br>    * Provides medical advice and support 24/7.<br>    * Monitors symptoms and tracks health progress.<br>    * Promotes healthy habits and disease prevention.
+2025-02-18 13:24:46,937 INFO Received user message: ohh thats great
+2025-02-18 13:29:19,728 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 13:29:23,643 INFO Watching for file changes with StatReloader
+2025-02-18 13:29:47,315 INFO Received user message: hi
+2025-02-18 13:29:47,316 INFO General greeting response: Good morning! How can I help?
+2025-02-18 13:29:52,189 INFO Received user message: how can i get started with the project on building a simple chatbot
+2025-02-18 13:30:19,218 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Getting Started with Building a Simple Chatbot<br><br>### 1. Set Up Your Development Environment<br><br>- Install a code editor (e.g., Visual Studio Code, Atom)<br>- Install Node.js and npm<br>- Install the Dialogflow Node.js library using `npm install dialogflow`<br><br>### 2. Create a Dialogflow Agent<br><br>- Go to the [Dialogflow Console](https://console.dialogflow.com/) and sign in or create an account.<br>- Click on "Create Agent" and give your agent a name.<br><br>### 3. Set Up Intents and Training Phrases<br><br>- An **intent** represents a user's goal or request.<br>- **Training phrases** are examples of how a user might express that intent.<br>- Go to the "Intents" tab and create an intent.<br>- Add training phrases to the intent.<br><br>### 4. Handle User Input<br><br>- Create a web page with an HTML form that allows users to input text.<br>- Use JavaScript to send the user's input to your chatbot.<br><br>### 5. Process User Input<br><br>- In your server-side code (e.g., using Node.js), process the user's input using Dialogflow.<br>- Send the user's input to the Dialogflow agent using `dialogflow.detectIntent()`.<br><br>### 6. Send Responses<br><br>- Dialogflow will return a response object containing the agent's response.<br>- Parse the response and send the response back to the user in a suitable format.<br><br>### 7. Example Code<br><br>```html<br><!DOCTYPE html><br><html><br><body><br>  <form><br>    <input type="text" id="user-input"><br>    <input type="submit" value="Send"><br>  </form><br><br>  <script><br>    // Send the user's input to the chatbot<br>    const form = document.querySelector('form');<br>    form.addEventListener('submit', (e) => {<br>      e.preventDefault();<br>      const userInput = document.getElementById('user-input').value;<br>      fetch('/chatbot', {<br>        method: 'POST',<br>        headers: {<br>          'Content-Type': 'application/json'<br>        },<br>        body: JSON.stringify({ userInput })<br>      })<br>      .then(res => res.json())<br>      .then(data => console.log(data.response))<br>      .catch(err => console.error(err));<br>    });<br>  </script><br></body><br></html><br>```<br><br>```javascript<br>// Server-side code to process user input<br>const dialogflow = require('@google-cloud/dialogflow');<br>const sessionClient = new dialogflow.SessionsClient();<br><br>app.post('/chatbot', async (req, res) => {<br>  const { userInput } = req.body;<br><br>  // Define the session path<br>  const sessionId = Math.random().toString(36).substring(7);<br>  const sessionPath = sessionClient.projectAgentSessionPath(projectId, sessionId);<br><br>  // The text query request.<br>  const request = {<br>    session: sessionPath,<br>    queryInput: {<br>      text: {<br>        text: userInput<br>      }<br>    }<br>  };<br><br>  // Send request and log result<br>  const responses = await sessionClient.detectIntent(request);<br>  console.log('Detected intent');<br>  const result = responses[0].queryResult;<br>  res.json({ response: result.fulfillmentMessages[0].text });<br>});<br>```<br><br>### Tips<br><br>- Use a prototyping tool like Botsify or ManyChat to quickly create and test your chatbot.<br>- Integrate your chatbot with messaging platforms like Facebook Messenger or Telegram.<br>- Use natural language processing (NLP) techniques to improve the understanding of user inputs.<br>- Train your chatbot regularly to improve its accuracy and performance.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>## Getting Started with Chatbot Development<br><br>**1. Choose a Platform and Language:**<br><br>* **Dialogflow (Google):** Cloud-based platform with pre-built intents and natural language processing (NLP).<br>* **Amazon Lex:** Amazon's chatbot platform with advanced conversational capabilities.<br>* **Python (with NLTK and Gensim):** Open-source programming language with libraries for NLP and machine learning.<br><br>**2. Design the Chatbot:**<br><br>* Define the chatbot's purpose, target audience, and tone of voice.<br>* Create a persona to represent the chatbot's characteristics.<br>* Outline the conversational flow and user interface (UI).<br><br>**3. Build the Chatbot:**<br><br>**Beginner:**<br><br>* Use a pre-built chatbot template or platform (e.g., ManyChat, Chatfuel).<br>* Utilize drag-and-drop interfaces to create conversational paths.<br><br>**Intermediate:**<br><br>* Code the chatbot using NLP libraries to process user input (e.g., scikit-learn, Transformers).<br>* Implement machine learning techniques (e.g., supervised learning, reinforcement learning) for improved responses.<br><br>**4. Integrate with Other Services:**<br><br>* **API Integration:** Connect to external APIs (e.g., weather, news) to provide dynamic responses.<br>* **CRM Integration:** Link the chatbot to a customer relationship management (CRM) system for lead generation and support.<br>* **Payment Processing:** Integrate payment gateways to enable e-commerce transactions.<br><br>**Advanced Techniques and Features:**<br><br>**5. **Conversational AI:** Leverage advanced machine learning models (e.g., BERT, GPT-3) for more human-like conversations.<br>**6. **Voice and Video Chat:** Enable chatbots to communicate through voice and video to enhance user experience.<br>**7. **Sentiment Analysis:** Analyze user input to detect sentiment and adjust responses accordingly.<br>**8. **Personalized Responses:** Tailor chatbot responses based on user context, demographics, and preferences.<br>**9. **Chatbot Analytics:** Track chatbot performance metrics (e.g., response times, user engagement) for optimization.<br>**10. **Multilingual Support:** Support multiple languages to reach a wider audience.<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>## Getting Started with a Simple Chatbot Project<br><br>### Materials and Resources:<br><br>- Python<br>- NLTK (Natural Language Toolkit)<br>- Dialogflow (optional)<br><br>### Steps:<br><br>1. **Train the Chatbot:** Collect and label a dataset of conversations. Use NLTK to extract features and train a machine learning model.<br>2. **Design the Conversation Flow:** Determine how the chatbot will respond to different user inputs. Create a dialogue tree or use a chatbot framework like Dialogflow.<br>3. **Implement the User Interface:** Use a web framework or platform to build the chatbot interface. Connect the trained model to the interface.<br>4. **Deploy and Test:** Deploy the chatbot and test its performance. Collect user feedback and make necessary improvements.<br><br>## Alternative Project Ideas<br><br>### **1. Image Recognition Assistant**<br><br>**Benefits:**<br><br>- Automate image classification and recognition tasks.<br>- Enhance accessibility for visually impaired users.<br>- Improve efficiency in data management.<br><br>### **2. Speech-to-Text Transcriber**<br><br>**Benefits:**<br><br>- Convert spoken audio into written text.<br>- Improve accessibility for deaf and hard of hearing users.<br>- Streamline dictation and note-taking processes.<br><br>### **3. Sentiment Analysis for Customer Feedback**<br><br>**Benefits:**<br><br>- Analyze customer feedback to understand sentiments.<br>- Identify areas for improvement in products or services.<br>- Enhance customer relationship management efforts.<br><br>### **4. Text Summarization Tool**<br><br>**Benefits:**<br><br>- Summarize long texts into concise and meaningful summaries.<br>- Improve reading comprehension and efficiency.<br>- Support research and academic endeavors.<br><br>### **5. Language Translation App**<br><br>**Benefits:**<br><br>- Translate text or speech between different languages.<br>- Enhance communication in multilingual environments.<br>- Foster global collaboration and understanding.
+2025-02-18 13:30:37,142 INFO Received user message: thats good
+2025-02-18 13:30:59,711 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Getting Started with the Project<br><br>### Step 1: Gather Prerequisites<br><br>* [HTML Editor](https://www.w3schools.com/html/html_editors.asp)<br>* [Text Editor](https://www.codecademy.com/learn/learn-the-command-line)<br>* [Web Server](https://www.apachefriends.org/en/index.html)<br>* [Version Control System (e.g., Git)](https://git-scm.com/)<br><br>### Step 2: Create a New Project Folder<br><br>* Open your text editor and create a new folder for your project.<br><br>### Step 3: Initialize a Git Repository<br><br>* Navigate to the project folder in your terminal.<br>* Run `git init` to initialize a new Git repository.<br><br>### Step 4: Create the Basic HTML Structure<br><br>* In your HTML editor, create a new file named `index.html`.<br>* Paste the following code snippet:<br><br>```html<br><!DOCTYPE html><br><html lang="en"><br><head><br>  <meta charset="UTF-8"><br>  <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>  <title>Project Name</title><br></head><br><body><br>  <h1>Welcome to the Project!</h1><br></body><br></html><br>```<br><br>### Step 5: Set Up a Web Server (Optional)<br><br>* If you want to view your project locally, you can set up a web server using Apache or another similar software.<br>* Once the server is running, navigate to the `index.html` file in your browser.<br><br>### Step 6: Start Developing<br><br>* Create new HTML, CSS, and JavaScript files as needed.<br>* Use version control to track changes to your code.<br>* Test and debug your project regularly.<br><br>### Tips<br><br>* Use semantic HTML tags to structure your content.<br>* Use CSS to style your project.<br>* Use JavaScript to add interactivity to your project.<br>* Break down your project into smaller tasks.<br>* Seek help from online resources or forums if needed.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>**Advanced HTML Techniques**<br><br>* **Microformats:** Use HTML attributes to embed structured data, enhancing accessibility and search engine optimization. Example: `<div itemscope itemtype="http://schema.org/Person">`<br>* **Custom Elements:** Define your own HTML elements with extended functionality. Example: `<my-element>Hello world!</my-element>`<br>* **Shadow DOM:** Create isolated DOM subtrees within existing elements, providing encapsulation and modularity. Example: `HTMLElement.prototype.attachShadow({mode: 'open'})`<br>* **Web Components:** Bundle HTML, CSS, and JavaScript into reusable and customizable components. Example: `<my-component><span>Content</span></my-component>`<br>* **Asynchronous Programming:** Use JavaScript callbacks or promises to handle asynchronous events and improve page responsiveness. Example: `xhr.onload = function() { alert("Data received"); }`<br>* **RESTful APIs:** Interact with remote services using standard HTTP methods, such as GET, POST, and PUT. Example: `fetch("https://example.com/api/users", { method: 'POST', body: JSON.stringify(user) })`<br><br>**Integrations**<br><br>* **Third-party APIs:** Integrate services like Google Maps, YouTube, and social media platforms. Example: `<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>`<br>* **Progressive Web Apps (PWAs):** Enhance website functionality with mobile-like features, such as offline access and push notifications. Example: `window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); });`<br>* **WebSockets:** Establish real-time communication between browsers and servers. Example: `const socket = new WebSocket("ws://example.com/socket");`<br><br>**Advanced Features**<br><br>* **Canvas:** Create interactive 2D graphics and animations. Example: `<canvas id="myCanvas" width="500" height="500"></canvas>`<br>* **WebGL:** Utilize the graphics capabilities of the GPU for complex 3D rendering. Example: `const gl = canvas.getContext("webgl");`<br>* **WebRTC:** Enable real-time audio and video communication over the web. Example: `navigator.mediaDevices.getUserMedia()`<br>* **Artificial Intelligence (AI):** Integrate AI capabilities, such as machine learning and natural language processing. Example: `ml.predict({ input: [1, 2, 3] })`<br>* **Web Assembly (WASM):** Execute high-performance code written in languages like C++ or Rust. Example: `WebAssembly.instantiate(arrayBuffer)`<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>**Alternative Project Ideas**<br><br><ul><br>  <li><b>Community Garden</b><br>    <br>Benefits:<br>    <ul><br>      <li>Promotes community engagement and collaboration</li><br>      <li>Provides fresh, healthy food to residents</li><br>      <li>Enhances the local environment and biodiversity</li><br>    </ul><br>  </li><br>  <li><b>Community Art Project</b><br>    <br>Benefits:<br>    <ul><br>      <li>Fosters creativity and self-expression</li><br>      <li>Beautifies the community and creates shared spaces</li><br>      <li>Promotes cultural exchange and understanding</li><br>    </ul><br>  </li><br>  <li><b>Environmental Restoration Project</b><br>    <br>Benefits:<br>    <ul><br>      <li>Improves air and water quality</li><br>      <li>Restores biodiversity and wildlife habitats</li><br>      <li>Educates the community about environmental issues</li><br>    </ul><br>  </li><br>  <li><b>Educational Program for Underprivileged Youth</b><br>    <br>Benefits:<br>    <ul><br>      <li>Provides access to education and enrichment opportunities</li><br>      <li>Inspires and empowers young people</li><br>      <li>Contributes to breaking the cycle of poverty</li><br>    </ul><br>  </li><br>  <li><b>Senior Citizen Support Initiative</b><br>    <br>Benefits:<br>    <ul><br>      <li>Provides assistance and companionship to elderly residents</li><br>      <li>Reduces isolation and loneliness</li><br>      <li>Promotes healthy aging and well-being</li><br>    </ul><br>  </li><br></ul>
+2025-02-18 13:32:35,210 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 13:32:39,331 INFO Watching for file changes with StatReloader
+2025-02-18 13:40:31,415 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 13:40:32,978 INFO Watching for file changes with StatReloader
+2025-02-18 13:41:10,020 INFO C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\chatbot\views.py changed, reloading.
+2025-02-18 13:41:11,900 INFO Watching for file changes with StatReloader
+2025-02-18 13:44:06,803 INFO Received user message: thats good
+2025-02-18 13:44:06,803 INFO General greeting response: No problem!
+2025-02-18 13:44:22,813 INFO Received user message: satisfying
+2025-02-18 13:44:22,813 INFO General greeting response: Glad to help!
+2025-02-18 13:45:05,273 INFO Received user message: how can i get started with the project on building a simple chatbot
+2025-02-18 13:45:25,943 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Getting Started with a Simple Chatbot Project<br><br>### Step 1: Understand the Fundamentals<br><br>* **What is a chatbot?** A chatbot is a computer program that simulates human conversation through messaging.<br>* **Why build a chatbot?** To automate customer service, provide information, or engage with users.<br><br>### Step 2: Choose a Platform<br><br>* **Dialogflow (Google):** Popular platform for creating conversational AI and chatbots.<br>* **Watson Assistant (IBM):** Provides AI-powered chatbot capabilities.<br>* **Botsify:** No-code platform for building chatbots quickly and easily.<br><br>### Step 3: Create a Chatbot Profile<br><br>1. **Sign up for your chosen platform.**<br>2. **Create a new chatbot.**<br>3. **Enter a name and description for your chatbot.**<br><br>### Step 4: Design the Conversation Flow<br><br>* **Intents:** Define the different types of user queries that your chatbot will handle.<br>* **Entities:** Extract specific information from user input (e.g., name, location).<br>* **Training Data:** Provide examples of conversations to train your chatbot.<br><br>### Step 5: Implement the Chatbot Logic<br><br>* **Coding:** Use a programming language (e.g., Node.js, Python) to connect your chatbot to the platform.<br>* **API integration:** Integrate with APIs (e.g., weather, news) to provide dynamic responses.<br><br>### Step 6: Style and Customize<br><br>* **User Interface (UI):** Design the user interface for your chatbot.<br>* **Personalization:** Add features like user avatars and custom greetings to make your chatbot more engaging.<br><br>### Step 7: Test and Deploy<br><br>* **Testing:** Thoroughly test your chatbot to ensure it responds correctly to user queries.<br>* **Deployment:** Deploy your chatbot on a messaging platform (e.g., Facebook Messenger, WhatsApp).<br><br>### Additional Tips<br><br>* **Keep it simple:** Start with a simple chatbot that handles a limited number of queries.<br>* **Use natural language:** Make your chatbot responses sound human-like.<br>* **Provide documentation:** Create user guides and training materials to help users interact with your chatbot.<br>* **Monitor performance:** Track key metrics (e.g., query volume, user satisfaction) to improve your chatbot over time.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>**Getting Started with a Simple Chatbot Project**<br><br>**1. Choose a Platform and Language:**<br><br>* **Dialogflow:** Google&#x27;s comprehensive chatbot platform with natural language processing (NLP) capabilities.<br>* **Botsify:** User-friendly platform ideal for beginners, with pre-built templates and analytics.<br>* **IBM Watson Assistant:** Enterprise-grade chatbot platform offering advanced NLP, machine learning, and customization options.<br>* **Python (with NLTK and spaCy):** Code-based approach for building custom chatbots with greater flexibility and control.<br><br>**2. Design the Chatbot&#x27;s Capabilities:**<br><br>* **Intents:** Define the specific tasks or queries that the chatbot will handle.<br>* **Entities:** Identify key information in user input, such as names, locations, and dates.<br>* **Responses:** Craft natural and informative responses that guide the conversation.<br><br>**Advanced Techniques and Features:**<br><br>**3. Advanced NLP:**<br><br>* **Intention Detection:** Use machine learning algorithms to classify user intent accurately.<br>* **Entity Extraction:** Accurately identify entities from unstructured user input using advanced NLP techniques.<br>* **Sentiment Analysis:** Understand the emotional tone of user messages and respond appropriately.<br><br>**4. Integrations:**<br><br>* **Website and Mobile App:** Embed the chatbot into your website or mobile app for convenient access.<br>* **Messaging Platforms:** Connect to popular messaging platforms like Facebook Messenger, WhatsApp, and Telegram.<br>* **CRM Systems:** Integrate with CRM systems to retrieve user data for personalized interactions.<br><br>**5. Machine Learning and AI:**<br><br>* **Training and Tuning:** Improve chatbot performance over time by training and tuning the underlying machine learning models.<br>* **Personalized Responses:** Tailor responses based on user history, preferences, and previous interactions.<br>* **Automated Learning:** Enable the chatbot to learn from new interactions and expand its knowledge base.<br><br>**6. Additional Features:**<br><br>* **Multi-Lingual Support:** Enable the chatbot to communicate in multiple languages.<br>* **Dashboard and Analytics:** Track chatbot performance, identify trends, and make data-driven improvements.<br>* **Webhooks and APIs:** Integrate with external systems for more complex functionality and custom actions.<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>**Getting Started with a Simple Chatbot Project**<br><br>1. **Choose a Platform:** Select a platform like Dialogflow, IBM Watson Assistant, or Botsify that offers easy chatbot building tools.<br>2. **Define Your Use Case:** Determine the purpose of your chatbot and the specific tasks it should perform, such as answering FAQs or providing support.<br>3. **Collect Data:** Gather transcripts of conversations, support requests, or other relevant materials to train your chatbot.<br>4. **Build Your Chatbot:** Use the platform&#x27;s tools to create intents (user questions), entities (specific data), and responses.<br>5. **Test and Iterate:** Test your chatbot in different scenarios and make adjustments based on user feedback.<br><br>**Alternative Project Ideas**<br><br>* **Interactive Quiz:** Build a chatbot that allows users to test their knowledge on a specific topic.<br>* **Customer Support Bot:** Create a bot to answer common customer queries, provide product recommendations, or automate order tracking.<br>* **Personal Assistant Bot:** Develop a bot that can set appointments, manage to-do lists, or provide reminders.<br>* **Interactive Storybook:** Create a bot that guides users through a branching storyline, allowing them to influence the plot.<br>* **Educational Assistant:** Build a bot that can provide learning resources, answer questions, and assess understanding.<br><br>**Benefits of Alternative Project Ideas**<br><br>* **Quiz Bot:** Enhances learning and engagement in education or training.<br>* **Customer Support Bot:** Improves customer satisfaction and reduces support costs.<br>* **Personal Assistant Bot:** Simplifies daily tasks and increases productivity.<br>* **Interactive Storybook:** Encourages creativity, imagination, and storytelling.<br>* **Educational Assistant:** Provides personalized learning experiences and supports students.
+2025-02-18 13:46:52,565 INFO Received user message: can you provide me html code
+2025-02-18 13:46:58,909 INFO Programming response: ```html  <br>      &lt;div class=&quot;form-row&quot;&gt;<br>        &lt;div class=&quot;col&quot;&gt;<br>          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;First name&quot;&gt;<br>        &lt;/div&gt;<br>        &lt;div class=&quot;col&quot;&gt;<br>          &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Last name&quot;&gt;<br>        &lt;/div&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-row&quot;&gt;<br>        &lt;div class=&quot;col-md-6 mb-3&quot;&gt;<br>          &lt;label for=&quot;validationServer03&quot;&gt;City&lt;/label&gt;<br>          &lt;input type=&quot;text&quot; class=&quot;form-control is-invalid&quot; id=&quot;validationServer03&quot; placeholder=&quot;City&quot; required&gt;<br>          &lt;div class=&quot;invalid-feedback&quot;&gt;<br>            Please provide a valid city.<br>          &lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;div class=&quot;col-md-3 mb-3&quot;&gt;<br>          &lt;label for=&quot;validationServer04&quot;&gt;State&lt;/label&gt;<br>          &lt;input type=&quot;text&quot; class=&quot;form-control is-invalid&quot; id=&quot;validationServer04&quot; placeholder=&quot;State&quot; required&gt;<br>          &lt;div class=&quot;invalid-feedback&quot;&gt;<br>            Please provide a valid state.<br>          &lt;/div&gt;<br>        &lt;/div&gt;<br>        &lt;div class=&quot;col-md-3 mb-3&quot;&gt;<br>          &lt;label for=&quot;validationServer05&quot;&gt;Zip&lt;/label&gt;<br>          &lt;input type=&quot;text&quot; class=&quot;form-control is-invalid&quot; id=&quot;validationServer05&quot; placeholder=&quot;Zip&quot; required&gt;<br>          &lt;div class=&quot;invalid-feedback&quot;&gt;<br>            Please provide a valid zip.<br>          &lt;/div&gt;<br>        &lt;/div&gt;<br>      &lt;/div&gt;  <br>```
+2025-02-18 13:48:17,044 INFO Received user message: how can i get started with the project on building a simple chatbot
+2025-02-19 09:49:37,992 INFO Watching for file changes with StatReloader
+2025-02-19 09:50:21,969 WARNING Not Found: /favicon.ico
+2025-02-19 10:04:28,881 ERROR Internal Server Error: /reset_password_form/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 76, in reset_password_form
+    user = CustomUser.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+accounts.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+2025-02-19 10:04:47,350 ERROR Internal Server Error: /reset_password_form/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 76, in reset_password_form
+    user = CustomUser.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+accounts.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+2025-02-19 10:05:03,154 ERROR Internal Server Error: /reset_password_form/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 76, in reset_password_form
+    user = CustomUser.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+accounts.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+2025-02-19 10:05:50,129 ERROR Internal Server Error: /reset_password_form/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 76, in reset_password_form
+    user = CustomUser.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+accounts.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+2025-02-19 10:06:08,813 ERROR Internal Server Error: /reset_password_form/
+Traceback (most recent call last):
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\mini_project\accounts\views.py", line 76, in reset_password_form
+    user = CustomUser.objects.get(email=email)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SHAFIA SABA\OneDrive\Desktop\django\my_venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+accounts.models.CustomUser.DoesNotExist: CustomUser matching query does not exist.
+2025-02-19 10:09:00,208 INFO Received user message: hi
+2025-02-19 10:09:00,208 INFO General greeting response: Good morning! How can I help?
+2025-02-19 10:16:22,221 INFO Received user message: ai powered resume analyzer
+2025-02-19 10:16:47,440 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Guide to Building an AI-Powered Resume Analyzer<br><br>### Prerequisites<br><br>* Basic knowledge of HTML, CSS, and JavaScript<br>* Familiarity with machine learning concepts<br>* Python (version 3.6 or higher)<br>* TensorFlow library<br><br>### Project Setup<br><br>1. **Create a new directory:** Open a terminal or command prompt and create a new directory for your project:<br><br>```<br>mkdir resume-analyzer<br>cd resume-analyzer<br>```<br><br>2. **Create an HTML file:** Inside the project directory, create an HTML file named `index.html`. This file will be the user interface for your resume analyzer.<br><br>```<br>touch index.html<br>```<br><br>### Design the User Interface<br><br>In your `index.html` file, include the following code to create a simple user interface:<br><br>```html<br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>  &lt;title&gt;Resume Analyzer&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>  &lt;h1&gt;Resume Analyzer&lt;/h1&gt;<br>  &lt;form id=&quot;form&quot;&gt;<br>    &lt;input type=&quot;file&quot; id=&quot;resume&quot; name=&quot;resume&quot;&gt;<br>    &lt;button type=&quot;submit&quot;&gt;Analyze&lt;/button&gt;<br>  &lt;/form&gt;<br>  &lt;div id=&quot;result&quot;&gt;&lt;/div&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br>```<br><br>* **Form:** This form allows users to select and upload their resume file.<br>* **Result:** This div will display the analysis results.<br><br>### Implement JavaScript<br><br>In the same HTML file, include the following JavaScript code:<br><br>```html<br>&lt;script&gt;<br>  const form = document.getElementById(&#x27;form&#x27;);<br><br>  form.addEventListener(&#x27;submit&#x27;, (event) =&gt; {<br>    event.preventDefault();<br><br>    // Get the selected resume file<br>    const file = document.getElementById(&#x27;resume&#x27;).files[0];<br><br>    // Send the file to the server for analysis<br>    const formData = new FormData();<br>    formData.append(&#x27;resume&#x27;, file);<br><br>    fetch(&#x27;analyze&#x27;, {<br>      method: &#x27;POST&#x27;,<br>      body: formData<br>    })<br>    .then(response =&gt; response.json())<br>    .then(data =&gt; {<br>      // Display the analysis results<br>      const result = document.getElementById(&#x27;result&#x27;);<br>      result.innerHTML = `&lt;pre&gt;${JSON.stringify(data, null, 2)}&lt;/pre&gt;`;<br>    })<br>    .catch(error =&gt; {<br>      console.error(&#x27;Error analyzing resume:&#x27;, error);<br>    });<br>  });<br>&lt;/script&gt;<br>```<br><br>* **Event Listener:** This event listener listens for the form&#x27;s submit event.<br>* **FormData:** This object contains the resume file and other form data.<br>* **Fetch:** This function sends the form data to a server endpoint for analysis.<br>* **Display Results:** The JSON response from the server is parsed and displayed in the &#x27;result&#x27; div.<br><br>### Machine Learning Model<br><br>In a separate Python file, implement the machine learning model for resume analysis. This could involve techniques like text classification, named entity recognition, or resume parsing. For example:<br><br>```python<br>import tensorflow as tf<br><br># Load the pre-trained resume analysis model<br>model = tf.keras.models.load_model(&#x27;resume_analysis_model.h5&#x27;)<br><br>def analyze_resume(resume):<br>  # Preprocess the resume text<br>  # ...<br><br>  # Predict using the model<br>  predictions = model.predict(resume)<br><br>  # Return the analysis results<br>  return predictions<br>```<br><br>### Integrating with Server<br><br>Create a server endpoint to handle the resume analysis requests from the JavaScript code. For example, in a Python script:<br><br>```python<br>from flask import Flask, request, jsonify<br><br>app = Flask(__name__)<br><br>@app.route(&#x27;/analyze&#x27;, methods=[&#x27;POST&#x27;])<br>def analyze():<br>  # Parse the form data to get the resume file<br>  # ...<br><br>  # Load the resume into a string<br>  resume_text = # ...<br><br>  # Analyze the resume using the machine learning model<br>  results = analyze_resume(resume_text)<br><br>  return jsonify(results)<br><br>if __name__ == &#x27;__main__&#x27;:<br>  app.run()<br>```<br><br>### Finishing Up<br><br>* Host your server endpoint on a suitable platform like Heroku or AWS.<br>* Deploy your HTML user interface on a web hosting provider like GitHub Pages or Netlify.<br>* Link the HTML UI to the server endpoint to make it fully functional.<br><br>Your AI-powered resume analyzer is now ready to provide automated analysis and insights into uploaded resumes.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>**Advanced Techniques:**<br><br>* **Machine Learning (ML) and Artificial Intelligence (AI):** Leverage ML/AI algorithms to analyze resumes and extract key information, such as skills, experience, and education.<br>* **Natural Language Processing (NLP):** Utilize NLP techniques to understand the context and semantics of resume content, enabling deeper analysis.<br>* **Text Mining:** Employ text mining algorithms to uncover hidden patterns and insights from resume data.<br>* **Pattern Recognition:** Identify and extract common resume patterns (e.g., career progression, industry keywords) for more accurate analysis.<br><br>**Integrations:**<br><br>* **Applicant Tracking Systems (ATS):** Integrate with ATS to automate resume screening and streamline the hiring process.<br>* **LinkedIn:** Leverage LinkedIn integrations to access candidate&#x27;s LinkedIn profiles for additional data (e.g., work history, skills endorsements).<br>* **Other Data Sources:** Integrate with databases or APIs to access external data (e.g., career path data, industry benchmarks).<br><br>**Features:**<br><br>* **Personalized Resume Scores:** Generate customized resume scores based on specific job requirements or company standards.<br>* **Skill Extraction:** Accurately identify and extract technical and soft skills from resumes, including proficiency levels and certifications.<br>* **Experience Matching:** Match candidate experience to job requirements, highlighting relevant roles and responsibilities.<br>* **Education Analysis:** Evaluate candidate&#x27;s educational qualifications, including degree type, institution, and GPA.<br>* **Bias Mitigation:** Implement measures to reduce bias in resume analysis, ensuring equitable hiring practices.<br>* **Candidate Recommendations:** Provide tailored candidate recommendations based on the analysis results and job requirements.<br>* **Benchmarking:** Compare candidate resumes against industry benchmarks or internal metrics to assess competitive advantage.<br>* **Historical Candidate Data:** Analyze historical candidate data to identify patterns and improve future hiring decisions.<br>* **Customizable Analysis:** Allow users to customize the analysis criteria and weightings to suit specific hiring needs.<br>* **Real-time Analysis:** Provide instant resume analysis results for quick candidate screening.<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>**Alternative Project Ideas**<br><br>**1. Predictive Analytics for Healthcare**<br><br>* **Benefits:**<br>    * Improve patient outcomes by predicting risk factors and providing personalized treatment plans.<br>    * Reduce healthcare costs by identifying high-risk patients and targeting interventions appropriately.<br>    * Enhance patient satisfaction by providing proactive care and preventing complications.<br><br>**2. Natural Language Processing (NLP) for Sentiment Analysis**<br><br>* **Benefits:**<br>    * Monitor brand sentiment and reputation in real-time.<br>    * Identify potential crises and mitigate risks.<br>    * Improve customer experience by understanding their feedback and addressing concerns.<br><br>**3. Computer Vision for Automated Image Recognition**<br><br>* **Benefits:**<br>    * Enhance security by detecting anomalies and suspicious activity.<br>    * Improve manufacturing efficiency by automating quality control processes.<br>    * Facilitate accessibility by providing image descriptions for visually impaired users.<br><br>**4. Machine Learning for Fraud Detection**<br><br>* **Benefits:**<br>    * Protect businesses from financial losses due to fraudulent transactions.<br>    * Enhance customer trust and loyalty by preventing fraud.<br>    * Reduce operational costs by automating fraud detection processes.<br><br>**5. Reinforcement Learning for Autonomous Driving**<br><br>* **Benefits:**<br>    * Advance transportation technology by enabling safer and more efficient self-driving vehicles.<br>    * Enhance accessibility for individuals with disabilities.<br>    * Reduce traffic congestion and environmental impact.
+2025-02-19 11:50:44,014 INFO Received user message: how can i get started with simple chatbot
+2025-02-19 11:51:10,577 INFO General query response: <strong>0: A detailed guide on how to begin with the project:</strong><br><br>## Getting Started with a Simple Chatbot<br><br>### Part 1: HTML Structure<br><br>```html<br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;Simple Chatbot&lt;/h1&gt;<br>&lt;div id=&quot;chat-window&quot;&gt;<br>  &lt;div class=&quot;message user&quot;&gt;Hello, chatbot&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div&gt;<br>  &lt;input type=&quot;text&quot; id=&quot;chat-input&quot;&gt;<br>  &lt;button id=&quot;chat-submit&quot;&gt;Send&lt;/button&gt;<br>&lt;/div&gt;<br><br>&lt;script&gt;<br>// Your chatbot code will go here.<br>&lt;/script&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;<br>```<br><br>### Part 2: JavaScript Code<br><br>Inside the `&lt;script&gt;` tags, add the following JavaScript code:<br><br>```javascript<br>// Get the chat window and input elements.<br>const chatWindow = document.getElementById(&#x27;chat-window&#x27;);<br>const chatInput = document.getElementById(&#x27;chat-input&#x27;);<br>const chatSubmit = document.getElementById(&#x27;chat-submit&#x27;);<br><br>// Add a message to the chat window.<br>const addMessage = (message, user) =&gt; {<br>  const newMessage = document.createElement(&#x27;div&#x27;);<br>  newMessage.classList.add(&#x27;message&#x27;);<br>  newMessage.classList.add(user);<br>  newMessage.textContent = message;<br>  chatWindow.appendChild(newMessage);<br>};<br><br>// Handle the submit event.<br>chatSubmit.addEventListener(&#x27;click&#x27;, () =&gt; {<br>  const message = chatInput.value;<br>  addMessage(message, &#x27;user&#x27;);<br>  chatInput.value = &#x27;&#x27;;<br><br>  // Your chatbot logic will go here.<br>  // For example:<br>  if (message === &#x27;Hello&#x27;) {<br>    addMessage(&#x27;Hello!&#x27;, &#x27;chatbot&#x27;);<br>  }<br>});<br>```<br><br>### Part 3: Run the Chatbot<br><br>Open the HTML file in your browser and start chatting!<br><br>## Additional Tips<br><br>* **Use a chatbot framework:** There are many chatbot frameworks available, such as [Botsify](https://botsify.com/) and [Dialogflow](https://dialogflow.com/), which can simplify the development process.<br>* **Add natural language processing:** Use natural language processing (NLP) techniques to make your chatbot more conversational and understand user input better.<br>* **Integrate with external services:** Connect your chatbot to other services, such as weather APIs or customer support databases, to provide more functionality.<br>* **Test and refine:** Test your chatbot thoroughly with different types of user input and make improvements based on feedback.<br><br><strong>1: Suggestions for advanced techniques, integrations, and features:</strong><br><br>**Getting Started with Simple Chatbot**<br><br>**1. Choose a chatbot platform:**<br><br>- **Dialogflow:** Supports natural language processing (NLP) and offers pre-built integrations.<br>- **Botsify:** User-friendly interface with drag-and-drop functionality.<br>- **IBM Watson Assistant:** Advanced AI capabilities for complex conversations.<br><br>**2. Create a chatbot script:**<br><br>- Define user intents: Identify the user&#x27;s goals or questions.<br>- Craft responses: Write clear and concise responses that address the user&#x27;s needs.<br>- Set up conversation flow: Create a logical flow of conversations based on user inputs.<br><br>**Advanced Techniques**<br><br>**1. NLP integration:**<br><br>- Use tools like Dialogflow or IBM Watson to enhance the chatbot&#x27;s ability to understand user language.<br>- Implement named entity recognition (NER) to extract specific data from user inputs.<br><br>**2. Contextual awareness:**<br><br>- Keep track of previous conversations and user preferences.<br>- Use this context to tailor responses and provide personalized experiences.<br><br>**3. Machine learning:**<br><br>- Train the chatbot on historical data or user interactions to improve its accuracy and efficiency.<br>- Use supervised learning techniques to refine the chatbot&#x27;s responses over time.<br><br>**Integrations and Features**<br><br>**1. External APIs:**<br><br>- Integrate with third-party APIs to access data, perform actions, or provide specific functionality.<br>- For example, connect to a CRM system to retrieve customer information.<br><br>**2. Messenger integration:**<br><br>- Connect the chatbot to messaging platforms like Facebook Messenger, WhatsApp, or Telegram.<br>- Enable users to interact with the chatbot directly within these platforms.<br><br>**3. Live agent handoff:**<br><br>- Integrate with a live chat system to escalate complex inquiries to human agents.<br>- Provide a seamless transition between chatbot and human interaction.<br><br>**Additional Features**<br><br>- **Multilingual support:** Allow the chatbot to respond in multiple languages.<br>- **Customizable UI:** Tailor the look and feel of the chatbot to match your brand.<br>- **Analytics and reporting:** Track key metrics like user engagement, conversation success, and chatbot performance.<br><br><strong>2: Alternative project ideas and their benefits:</strong><br><br>**Getting Started with a Simple Chatbot**<br><br>**Prerequisites:**<br><br>* Basic HTML knowledge<br>* Text editor (e.g., Notepad, Sublime Text)<br><br>**Steps:**<br><br>1. **Create an HTML file:** Start by creating a new HTML document.<br><br>2. **Add the chatbot script:** Copy the following script and paste it into the `&lt;head&gt;` section:<br><br>```html<br>&lt;script&gt;<br>// Simple chatbot script<br>const chatbot = {<br>  responses: [<br>    &quot;Hello, how can I help you?&quot;,<br>    &quot;Sorry, I don&#x27;t understand your question.&quot;,<br>    &quot;Please be more specific.&quot;<br>  ],<br>  generateResponse: function() {<br>    // Generate a random response from the array<br>    return this.responses[Math.floor(Math.random() * this.responses.length)];<br>  }<br>};<br><br>// Handle user input<br>document.addEventListener(&quot;DOMContentLoaded&quot;, () =&gt; {<br>  const input = document.getElementById(&quot;input&quot;);<br>  const output = document.getElementById(&quot;output&quot;);<br>  <br>  input.addEventListener(&quot;keyup&quot;, (e) =&gt; {<br>    if (e.key === &quot;Enter&quot;) {<br>      const message = input.value;<br>      output.innerHTML = chatbot.generateResponse();<br>      input.value = &quot;&quot;;<br>    }<br>  });<br>});<br>&lt;/script&gt;<br>```<br><br>3. **Add the chatbot UI:** Create a simple form with an input field and a submit button. The form should be placed in the `&lt;body&gt;` section:<br><br>```html<br>&lt;body&gt;<br>  &lt;form&gt;<br>    &lt;input type=&quot;text&quot; id=&quot;input&quot; placeholder=&quot;Type your question&quot;&gt;<br>    &lt;input type=&quot;submit&quot; value=&quot;Send&quot;&gt;<br>  &lt;/form&gt;<br>  &lt;div id=&quot;output&quot;&gt;&lt;/div&gt;<br>&lt;/body&gt;<br>```<br><br>**Alternative Project Ideas**<br><br>* **FAQ Chatbot:** Create a chatbot that provides answers to frequently asked questions about a specific topic. This can be useful for customer support or information websites.<br><br>* **Language Translator Chatbot:** Build a chatbot that can translate text from one language to another. This could be helpful for travelers or those communicating with individuals who speak different languages.<br><br>* **Recipe Finder Chatbot:** Develop a chatbot that suggests recipes based on user preferences, dietary restrictions, and ingredients available. This can assist users in finding new and exciting dishes to cook.<br><br>* **Weather Forecast Chatbot:** Create a chatbot that provides current weather conditions and forecasts for a specific location. Users can interact with the chatbot to get up-to-date weather information.<br><br>* **Shopping Assistant Chatbot:** Build a chatbot that helps users find products, compare prices, and complete purchases online. This can streamline the shopping experience and save time.<br><br>**Benefits of Alternative Projects:**<br><br>* **Increased Functionality:** Alternative projects offer more advanced features and can provide solutions to specific user needs.<br>* **Improved User Engagement:** Chatbots with specialized functionalities can enhance user engagement by providing personalized assistance or interactive experiences.<br>* **Real-World Applications:** These projects have practical applications in various industries, such as customer service, e-commerce, and information gathering.

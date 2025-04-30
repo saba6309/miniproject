@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .chat-container {
+        width: 100%;
+        max-width: 800px;
+        height: 80vh;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .chat-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .chat-messages {
+        padding: 20px;
+        flex: 1;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .user-message,
+      .bot-response {
+        max-width: 70%;
+        padding: 10px;
+        border-radius: 10px;
+        word-break: break-word;
+      }
+      .user-message {
+        align-self: flex-end;
+        background-color: #d1e7ff;
+        text-align: right;
+        margin-right: 10px;
+      }
+      .bot-response {
+        align-self: flex-start;
+        background-color: #e8e8e8;
+        text-align: left;
+        margin-left: 10px;
+      }
+      .chat-input {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+      }
+      .chat-input textarea {
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+      }
+      .chat-input button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+      .chat-input button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">Chatbot</div>
+      <div class="chat-messages">
+        {% for message in messages %}
+        <div class="user-message">
+          <strong>User:</strong> {{ message.user_message }}
+        </div>
+        <div class="bot-response">
+          <strong>Bot:</strong>
+          <div>{{ message.bot_response|safe }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="chat-input">
+        <form action="{% url 'send_message' %}" method="post">
+          {% csrf_token %}
+          <textarea
+            name="user_message"
+            placeholder="Type your message..."
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
